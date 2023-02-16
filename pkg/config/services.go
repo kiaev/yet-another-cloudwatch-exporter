@@ -40,6 +40,13 @@ var SupportedServices = serviceConfigs{
 		},
 	},
 	{
+		Namespace: "MWAA",
+		Alias:     "airflow-cluster",
+		ResourceFilters: []*string{
+			aws.String("airflow-cluster"),
+		},
+	},
+	{
 		Namespace: "AWS/ApplicationELB",
 		Alias:     "alb",
 		ResourceFilters: []*string{
